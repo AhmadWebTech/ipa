@@ -5,12 +5,12 @@ archive: false
 post_class: post-template
 ---
 
-{% if page.baner %}
+{% if page.banner %}
 
 {% if site.lazyimages == "enabled" %}
-<div class="package-header-image" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=');" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}"></div>
+<div class="package-header-image" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=');" data-src="{% if page.image contains "://" %}{{ page.banner }}{% else %}{{ site.baseurl }}/{{ page.banner }}{% endif %}"></div>
 {% else %}
-<div class="package-header-image" style="background-image: url('{% if page.baner contains "://" %}{{ page.baner }}{% else %}{{ site.baseurl }}/{{ page.baner }}{% endif %}');"></div>
+<div class="package-header-image" style="background-image: url('{% if page.banner contains "://" %}{{ page.banner }}{% else %}{{ site.baseurl }}/{{ page.banner }}{% endif %}');"></div>
 {% endif %}
 
 {% endif %}
@@ -29,21 +29,25 @@ post_class: post-template
     </div>
     <div class="info">
         <h1>{{ page.title }}</h1>
+        {% if page.version %}
         <p class="lead">Version: {{ page.version }}</p>
+        {% endif %}
     </div>
     <div class="purchase-button nano-hide">
-        <a href="{{ page.down }}">IPA</a>
+        <a href="{% if page.image contains "://" %}{{ page.down }}{% else %}{{ site.baseurl }}/{{ page.down }}{% endif %}">IPA</a>
         <p class="sale"></p>
     </div>
 </div>
+{% if page.screenshots %}
 <div id="screenshots" class="section">
     <h3>Screenshots</h3>
     <div class="screenshots">
         {% for screenshot in page.screenshots %}
-            <img src="{{ site.baseurl }}/{{ screenshot }}">
+            <img src="{% if page.image contains "://" %}{{ screenshot }}{% else %}{{ site.baseurl }}/{{ screenshot }}{% endif %}">
         {% endfor %}
     </div>
 </div>
+{% endif %}
 {% if page.description %}
 <div id="description" class="section">
     <h3>Description</h3>
