@@ -30,6 +30,13 @@ ga('send', 'pageview');
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
     <div id="app" class="" style="padding-top: 50px; --gradient-top:50px;">
+        <nav id="page-nav" class="navbar navbar-default navbar-fixed-top navbar-unresponsive">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ site.baseurl }}" class="navbar-brand router-link-active"><strong>{{ site.name }}</strong></a>
+                </div>
+            </div>
+        </nav>        
         <main>
             <div class="container">
 
