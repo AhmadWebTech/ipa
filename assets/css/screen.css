@@ -431,7 +431,8 @@ nav.navbar-default .navbar-brand strong {
 @media (max-width: 700px) {
     .package-icon>img {
         font-size:44px;
-        height: 86px
+        height: 86px;
+        width: 86px;
     }
 }
 
@@ -624,3 +625,4 @@ nav.navbar-default .navbar-brand strong {
 .section span>h4 {
     font-size: 17px
 }
+
