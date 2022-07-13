@@ -34,7 +34,7 @@ post_class: post-template
         {% endif %}
     </div>
     <div class="purchase-button nano-hide">
-        <a href="{% if page.image contains "://" %}{{ page.down }}{% else %}{{ site.baseurl }}/{{ page.down }}{% endif %}">IPA</a>
+        <a href="{% if page.down contains "://" %}{{ page.down }}{% else %}{{ site.baseurl }}/{{ page.down }}{% endif %}">IPA</a>
         <p class="sale"></p>
     </div>
 </div>
@@ -43,7 +43,7 @@ post_class: post-template
     <h3>Screenshots</h3>
     <div class="screenshots">
         {% for screenshot in page.screenshots %}
-            <img src="{% if page.image contains "://" %}{{ screenshot }}{% else %}{{ site.baseurl }}/{{ screenshot }}{% endif %}">
+            <img src="{% if page.screenshot contains "://" %}{{ screenshot }}{% else %}{{ site.baseurl }}/{{ screenshot }}{% endif %}">
         {% endfor %}
     </div>
 </div>
