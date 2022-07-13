@@ -32,7 +32,7 @@ post_class: post-template
         <p class="lead">Version: {{ page.version }}</p>
     </div>
     <div class="purchase-button nano-hide">
-        <a href="{{ page.down }}">IPA</a>
+        <a href="{{ site.baseurl }}/{{ page.down }}">IPA</a>
         <p class="sale"></p>
     </div>
 </div>
@@ -40,7 +40,7 @@ post_class: post-template
     <h3>Screenshots</h3>
     <div class="screenshots">
         {% for screenshot in page.screenshots %}
-            <img src="{{ screenshot }}">
+            <img src="{{ site.baseurl }}/{{ screenshot }}">
         {% endfor %}
     </div>
 </div>
