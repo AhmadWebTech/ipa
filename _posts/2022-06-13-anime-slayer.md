@@ -15,7 +15,5 @@ screenshots: [
   upload/Anime-Slayer/04.webp,
   upload/Anime-Slayer/05.webp"
 ]
-description: "لمشاهدة وتحميل الأنمي
--حمل تطبيق ASDFileManager لكي تعمل الحلقات
-"
+description: "لمشاهدة وتحميل الأنمي   -حمل تطبيق ASDFileManager لكي تعمل الحلقات"
 ---
