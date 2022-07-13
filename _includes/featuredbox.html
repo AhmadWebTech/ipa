@@ -2,7 +2,7 @@
 {% assign author = site.authors[post.author] %}
 
 <a href="{{ site.baseurl }}{{ post.url }}">
-    {% if site.banner %}
+    {% if post.banner %}
     <div class="package has-header-image" style="background-image: url('{% if post.banner contains "://" %}{{ post.banner }}{% else %}{{ site.baseurl }}/{{ post.banner }}{% endif %}');">
     {% else %}
     <div class="package has-header-image" style="background-image: url('{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}');">
