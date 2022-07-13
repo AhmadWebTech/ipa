@@ -110,18 +110,20 @@ ga('send', 'pageview');
 
 <!-- Site Title
 ================================================== -->
-<div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">
-        {{ site.description }}
-    </p>
+{% if page.url == "/" %}
+<div class="header">
+    <h1>{{ site.name }}</h1>
+    <p class="lead">{{ site.description }}</p>
 </div>
+{% endif %}
 
 <!-- Content
 ================================================== -->
 <div class="main-content">
     {{ content }}
 </div>
+
+</div> <!-- /.site-content -->
 
 <!-- Begin Footer
 ================================================== -->
@@ -135,8 +137,6 @@ ga('send', 'pageview');
 </footer>
 <!-- End Footer
 ================================================== -->
-
-</div> <!-- /.site-content -->
 
 <!-- Scripts
 ================================================== -->
