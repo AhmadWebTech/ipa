@@ -24,6 +24,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .container {
     max-width: 924px;
 }
@@ -625,4 +629,3 @@ nav.navbar-default .navbar-brand strong {
 .section span>h4 {
     font-size: 17px
 }
-
