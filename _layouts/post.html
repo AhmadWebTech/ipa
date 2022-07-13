@@ -32,7 +32,7 @@ post_class: post-template
         <p class="lead">Version: {{ page.version }}</p>
     </div>
     <div class="purchase-button nano-hide">
-        <a href="{{ site.baseurl }}/{{ page.down }}">IPA</a>
+        <a href="{{ page.down }}">IPA</a>
         <p class="sale"></p>
     </div>
 </div>
@@ -44,7 +44,9 @@ post_class: post-template
         {% endfor %}
     </div>
 </div>
+{% if page.description %}
 <div id="description" class="section">
     <h3>Description</h3>
     <p>{{ page.description }}</p>
 </div>
+{% endif %}
