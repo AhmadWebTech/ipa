@@ -5,11 +5,11 @@ permalink: "/categories.html"
 ---
 
 {% for category in site.categories %}
-{% assign pages_list = category[1] %}
 <div class="section-categories">
     <div id="{{ category[0] | replace: " ","-" }}" class="section-category">
         <h2>{{ category[0] }}</h2>
         <div class="packages table trio">
+            {% assign pages_list = category[1] %}
             {% for post in pages_list %}
             {% if post.title != null %}
             {% if group == null or group == post.group %}
@@ -17,9 +17,9 @@ permalink: "/categories.html"
             {% endif %}
             {% endif %}
             {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
         </div>
     </div>
 </div>
-{% assign pages_list = nil %}
-{% assign group = nil %}
 {% endfor %}
