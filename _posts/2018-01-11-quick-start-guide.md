@@ -5,7 +5,7 @@ author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: true
-hidden: false
+<!-- hidden: false -->
 
 baner: "https://i.ibb.co/CwXVN2J/IMG-20220318-104101.webp"
 down: "https://up-ipa.com/uploads/up-ipa.comAnSlayerSigned.ipa"
