@@ -15,5 +15,7 @@ screenshots: [
   upload/Anime-Slayer/04.webp,
   upload/Anime-Slayer/05.webp"
 ]
-description: "My review of Inception movie. Acting, plot and something else in this short description."
+description: "لمشاهدة وتحميل الأنمي
+-حمل تطبيق ASDFileManager لكي تعمل الحلقات
+"
 ---
