@@ -29,7 +29,7 @@ post_class: post-template
     </div>
     <div class="info">
         <h1>{{ page.title }}</h1>
-        <p class="lead">{{ page.version }}</p>
+        <p class="lead">Version:{{ page.version }}</p>
     </div>
     <div class="purchase-button nano-hide">
         <a href="#">IPA</a>
@@ -37,8 +37,11 @@ post_class: post-template
     </div>
 </div>
 <div id="screenshots" class="section">
-    <h3>Screenshots</h3> <div class="screenshots">
-        <img src="https://repo.dynastic.co/data/static/version/347790787796271104/347790788190535680?size=750">
+    <h3>Screenshots</h3>
+    <div class="screenshots">
+        {% for screenshot in page.screenshots %}
+            <img src="{{ screenshot }}">
+        {% endfor %}
     </div>
 </div>
 <div id="description" class="section">
