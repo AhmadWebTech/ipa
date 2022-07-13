@@ -6,6 +6,13 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: true
 hidden: true
+
+version: 2.5
+screenshots: [ 
+"https://repo.dynastic.co/data/static/version/347790787796271104/347790788190535680?size=750",
+"https://repo.dynastic.co/data/static/version/347790787796271104/347790788190535680?size=750"
+]
+description: "My review of Inception movie. Acting, plot and something else in this short description."
 ---
 
 Director Roland Suso Richter's enigmatic psychological thriller (direct to video/DVD) was based upon screenwriter Michael Cooney's own play "Point of Death" - a title that gave away the film's entire plot twist premise.
