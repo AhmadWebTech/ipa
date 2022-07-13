@@ -8,16 +8,17 @@ permalink: "/categories.html"
 {% assign pages_list = category[1] %}
 {% for post in pages_list %}
 {% if post.title != null %}
-{% if group == null or group == post.group %}
 <div class="section-categories">
     <div id="{{ category[0] | replace: " ","-" }}" class="section-category">
         <h2>{{ category[0] }}</h2>
         <div class="packages table trio">
+            {% if group == null or group == post.group %}
             {% include postbox.html %}  
+            {% endif %}
+
         </div>
     </div>
 </div>
-{% endif %}
 {% endif %}
 {% endfor %}
 {% assign pages_list = nil %}
