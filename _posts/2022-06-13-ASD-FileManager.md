@@ -1,12 +1,11 @@
 ---
 layout: post
-featured: true
 categories: [ Watching ]
 
 title:  "Anime Slayer"
-image: upload/Anime-Slayer/image.webp
-banner: upload/ASDFileManager/banner.webp
-down: ""
+image:  upload/img/Anime-Slayer/image.webp
+banner: upload/img/ASDFileManager/banner.webp
+down:   ""
 version: 1.0
 screenshots: [
 ]
