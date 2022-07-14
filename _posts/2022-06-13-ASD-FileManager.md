@@ -2,11 +2,9 @@
 layout: post
 categories: [ Watching ]
 
-title:  "Anime Slayer"
+title:  "ASD FileManager"
 image:  upload/img/ASDFileManager/image.webp
-down:   ""
+down:   upload/ipa/ASDFileManagerSigned.ipa
 version: 1.0
-screenshots: [
-]
 description: "لتشغيل حلقات انمي سلاير"
 ---
