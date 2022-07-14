@@ -38,6 +38,12 @@ post_class: post-template
         <p class="sale"></p>
     </div>
 </div>
+{% if page.description %}
+<div id="description" class="section">
+    <h3>Description</h3>
+    <p>{{ page.description }}</p>
+</div>
+{% endif %}
 {% if page.screenshots %}
 <div id="screenshots" class="section">
     <h3>Screenshots</h3>
@@ -46,11 +52,5 @@ post_class: post-template
             <img src="{% if page.screenshot contains "://" %}{{ screenshot }}{% else %}{{ site.baseurl }}/{{ screenshot }}{% endif %}">
         {% endfor %}
     </div>
-</div>
-{% endif %}
-{% if page.description %}
-<div id="description" class="section">
-    <h3>Description</h3>
-    <p>{{ page.description }}</p>
 </div>
 {% endif %}
