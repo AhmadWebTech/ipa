@@ -4,6 +4,8 @@ layout: default
 permalink: "/categories.html"
 ---
 
+{% app.request.get('name') %}
+
 {% for category in site.categories %}
 <div class="section-categories">
     <div id="{{ category[0] | replace: " ","-" }}" class="section-category">
