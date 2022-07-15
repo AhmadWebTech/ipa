@@ -1,6 +1,8 @@
 ---
 layout: post
 categories: [ Watching ]
+category: [ Watching ]
+tag: [ Watching ]
 
 title:  "ASD FileManager"
 image:  upload/img/ASDFileManager/image.webp
