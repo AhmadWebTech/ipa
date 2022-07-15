@@ -26,6 +26,8 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
+    categories: '/categories/:name/'
+    tag: '/tag/:name/'
     
 # Pagination 
 paginate: 999999
