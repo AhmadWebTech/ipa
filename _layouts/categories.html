@@ -4,7 +4,7 @@ layout: default
 permalink: "/categories.html"
 ---
 
-{{ app.request.get('name') }}
+This page is {{ page.url.params.category }} for categories.
 
 {% for category in site.categories %}
 <div class="section-categories">
