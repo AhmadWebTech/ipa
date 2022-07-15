@@ -3,17 +3,13 @@ title: "Categories"
 layout: default
 permalink: "/categories.html"
 ---
-
-<script>
-    var parts = window.location.search.substr(1).split("&");
-    var $_GET = {};
-    for (var i = 0; i < parts.length; i++) {
-        var temp = parts[i].split("=");
-        $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
-    }
-
-    var id = $_GET['id'];
-</script>
+{% parts = window.location.search.substr(1).split("&") %}
+{% $_GET = {} %}
+{% for i = 0 i < parts.length; i++ %}
+    {% temp = parts[i].split("=") %}
+    {% $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]) %}
+{% endfor %}
+{% id = $_GET['id']; %}
 
 {% for category in site.categories %}
     {% if id == category[0] %}
