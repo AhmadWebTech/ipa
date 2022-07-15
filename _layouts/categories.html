@@ -5,7 +5,7 @@ permalink: "/categories.html"
 ---
 {% parts = window.location.search.substr(1).split("&") %}
 {% $_GET = {} %}
-{% for i = 0 i < parts.length; i++ %}
+{% for i = 0; i < parts.length; i++ %}
     {% temp = parts[i].split("=") %}
     {% $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]) %}
 {% endfor %}
