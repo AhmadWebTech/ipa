@@ -1,6 +1,6 @@
 ---
 layout: null
-title: 404
+title: Apps
 permalink: /apps
 ---
 {
