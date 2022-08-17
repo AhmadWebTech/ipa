@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /apps.json
 ---
 {
     "name": "{{ site.title }}",
