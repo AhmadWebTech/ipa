@@ -1,7 +1,5 @@
 ---
 layout: null
-title: Apps
-permalink: /apps
 ---
 {
     "name": "{{ site.title }}",
