@@ -1,5 +1,6 @@
 ---
 layout: null
+title: 404
 permalink: /apps.json
 ---
 {
