@@ -1,7 +1,7 @@
 ---
 layout: null
 title: 404
-permalink: /apps.txt
+permalink: /apps
 ---
 {
     "name": "{{ site.title }}",
